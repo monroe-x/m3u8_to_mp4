@@ -11,17 +11,17 @@ m3u8_to_mp4
 
 ## 安装
 
+git clone或者直接下载
 ```
-pip install m3u8-to-mp4
+git clone https://github.com/monroe-x/m3u8_to_mp4.git
 ```
 
 ## 使用
 
 ```python
-from m3u8_to_mp4 import M3U8Downloader
+import m3u8_to_mp4
 
-downloader = M3U8Downloader()
-downloader.download('mixed.m3u8', 'ts_files', 'final_video.mp4', 'https://example.com/hls/')
+m3u8_to_mp4.m3u8_to_mp4('mixed.m3u8', 'ts_files', 'final_video.mp4', 'https://example.com/hls/')
 ```
 
 参数说明:
@@ -37,6 +37,9 @@ downloader.download('mixed.m3u8', 'ts_files', 'final_video.mp4', 'https://exampl
 ## 依赖
 
 本库依赖 ffmpeg。请前往[官网](https://ffmpeg.org/)下载,并将 bin 目录添加到系统环境变量 PATH 中。
+```
+pip install requests opencv-python
+```
 
 m3u8-to-mp4
 
@@ -51,17 +54,17 @@ A Python library for converting m3u8 streaming media files to mp4 video files. T
 
 ## Installation
 
+Git clone or download directly
 ```
-pip install m3u8-to-mp4
+git clone https://github.com/monroe-x/m3u8_to_mp4.git
 ```
 
 ## Usage
 
 ```python
-from m3u8_to_mp4 import M3U8Downloader
+import m3u8_to_mp4
 
-downloader = M3U8Downloader()
-downloader.download('mixed.m3u8', 'ts_files', 'final_video.mp4', 'https://example.com/hls/')
+m3u8_to_mp4.m3u8_to_mp4('mixed.m3u8', 'ts_files', 'final_video.mp4', 'https://example.com/hls/')
 ```
 
 Parameter explanation:
@@ -77,3 +80,6 @@ Open the m3u8 file in a browser, check the network requests, find the network re
 ## Dependency
 
 This library depends on ffmpeg. Please go to the [official website](https://ffmpeg.org/) to download and add the bin directory to the system environment variable PATH.
+```
+pip install requests opencv-python
+```
